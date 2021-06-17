@@ -15,7 +15,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             hash: true,
             filename: './index.html',
-            title: "STRONKA",
+            title: "LineUp",
             template: './src/index.html',
             chunks: ["particles"],
         }),
