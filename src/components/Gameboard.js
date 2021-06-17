@@ -6,12 +6,12 @@ export default class Board {
         if (which == "board") {
 
             this.material = []
-            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/side.png') }));
-            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/side.png') }));
             this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/up.png') }));
             this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/up.png') }));
-            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/front.png') }));
-            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/back.png') }));
+            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/up.png') }));
+            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/up.png') }));
+            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/up.png') }));
+            this.material.push(new MeshPhongMaterial({ side: DoubleSide, map: new TextureLoader().load('/src/components/assets/up.png') }));
             console.log(this.material)
             this.geometry = new BoxGeometry(140, 120, 30);
             this.Board = new Mesh(this.geometry, this.material);
