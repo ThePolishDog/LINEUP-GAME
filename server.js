@@ -26,13 +26,14 @@ app.get('/src/components/assets/up.png', function (req, res) {
     res.sendFile(__dirname + '/src/components/assets/up.png')
 })
 
-//if (gamePermission == 1) {
-app.use('/', express.static(__dirname + "/dist"))
-// }
-// else {
-//     app.get('/', function (req, res) {
-//         res.redirect('/lobby');
-//     })
+if (connectCounter == 2) {
+    app.use('/', express.static(__dirname + "/dist"))
+}
+else {
+    app.get('/', function (req, res) {
+        res.redirect('/lobby');
+    })
+}
 
 //}
 app.get('/lobby', function (req, res) {
