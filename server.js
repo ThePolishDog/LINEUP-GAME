@@ -19,15 +19,15 @@ app.get('/src/components/assets/up.png', function (req, res) {
 })
 
 app.get('/src/components/assets/front.png', function (req, res) {
-    res.sendFile(__dirname + '/src/components/assets/front.png')
+    res.sendFile(__dirname + '/src/components/assets/Front.png')
 })
 
 app.get('/src/components/assets/back.png', function (req, res) {
-    res.sendFile(__dirname + '/src/components/assets/back.png')
+    res.sendFile(__dirname + '/src/components/assets/Back.png')
 })
 
 app.get('/src/components/assets/side.png', function (req, res) {
-    res.sendFile(__dirname + '/src/components/assets/side.png')
+    res.sendFile(__dirname + '/src/components/assets/Side.png')
 })
 
 // if (connectCounter == 2) {
