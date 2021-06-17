@@ -13,17 +13,21 @@ var gamePermission = 0;
 app.get('/src/components/assets/walls.png', function (req, res) {
     res.sendFile(__dirname + '/src/components/assets/walls.png')
 })
-app.get('/src/components/assets/side.png', function (req, res) {
-    res.sendFile(__dirname + '/src/components/assets/side.png')
+
+app.get('/src/components/assets/up.png', function (req, res) {
+    res.sendFile(__dirname + '/src/components/assets/up.png')
 })
-app.get('/src/components/assets/back.png', function (req, res) {
-    res.sendFile(__dirname + '/src/components/assets/back.png')
-})
+
 app.get('/src/components/assets/front.png', function (req, res) {
     res.sendFile(__dirname + '/src/components/assets/front.png')
 })
-app.get('/src/components/assets/up.png', function (req, res) {
-    res.sendFile(__dirname + '/src/components/assets/up.png')
+
+app.get('/src/components/assets/back.png', function (req, res) {
+    res.sendFile(__dirname + '/src/components/assets/back.png')
+})
+
+app.get('/src/components/assets/side.png', function (req, res) {
+    res.sendFile(__dirname + '/src/components/assets/side.png')
 })
 
 // if (connectCounter == 2) {
